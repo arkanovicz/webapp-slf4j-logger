@@ -22,11 +22,11 @@ under the License.
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>9</version>
     </parent>
     <groupId>com.republicate</groupId>
     <artifactId>webapp-slf4j-logger</artifactId>
-    <version>3.1</version>
+    <version>4.0</version>
     <packaging>jar</packaging>
     <name>webapp-slf4j-logger</name>
     <description>SLF4J backend to log to a WebApp's ServletContext</description>
@@ -60,8 +60,8 @@ under the License.
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.13.2</junit.version>
-        <slf4j.version>2.0.7</slf4j.version>
-        <servlet.api.version>4.0.4</servlet.api.version>
+        <slf4j.version>2.0.17</slf4j.version>
+        <servlet.api.version>6.1.0</servlet.api.version>
     </properties>
     <dependencies>
         <dependency>
@@ -90,7 +90,7 @@ under the License.
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.16.1</version>
+            <version>1.21.2</version>
         </dependency>
     </dependencies>
     <distributionManagement>
@@ -134,12 +134,12 @@ under the License.
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.13</version>
+                <version>1.7.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                    <nexusUrl>https://ossrh-staging-api.central.sonatype.com/service/local/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
             <plugin>
