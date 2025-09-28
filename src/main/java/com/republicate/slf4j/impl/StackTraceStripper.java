@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
  * <ul>
  *   <li>java</li>
  *   <li>javax</li>
+ *   <li>jakarta</li>
  *   <li>com.mysql</li>
  *   <li>org.apache</li>
  *   <li>org.codehaus</li>
@@ -35,6 +36,7 @@ public class StackTraceStripper implements Serializable
         // packages don't have to end with '.', but it avoids potential false positives
         defaultUnwantedPackages.add("java.");
         defaultUnwantedPackages.add("javax.");
+        defaultUnwantedPackages.add("jakarta.");
         defaultUnwantedPackages.add("com.mysql.");
         defaultUnwantedPackages.add("org.apache.");
         defaultUnwantedPackages.add("org.codehaus.");
