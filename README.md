@@ -59,7 +59,7 @@ If your J2EE container is complient with the 3.0 servlet API, then you just have
 <dependency>
     <groupId>com.republicate</groupId>
     <artifactId>webapp-slf4j-logger</artifactId>
-    <version>1.6</version>
+    <version>4.2</version>
     <scope>runtime</scope>
 </dependency>
 ```
